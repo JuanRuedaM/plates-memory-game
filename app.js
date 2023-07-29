@@ -9,6 +9,8 @@ const inputNumbers = document.querySelector(".input-numbers")
 let newLetter 
 let newNumber
 
+btnVerify.disabled = true
+
 form.addEventListener('click', (e) => {
   e.preventDefault()
 })
@@ -41,10 +43,10 @@ btnGenerate.addEventListener('click', () => {
   letters.innerHTML = newLetter
   numbers.innerHTML = newNumber
 
-  console.log(letters.innerHTML)
-  console.log(numbers.innerHTML)
   inputLetters.focus()
 
+  btnVerify.disabled = false
+  
   let timer = setTimeout(() => {
     letters.innerHTML = ''
     numbers.innerHTML = ''
