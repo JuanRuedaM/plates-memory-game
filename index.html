@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Lemon&family=Open+Sans:wght@300;500&family=Roboto:wght@300&family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <title>Generador de placas</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="placa">
+      <span class="placa-in" id="letters">ABC</span> <span class="separator">—</span> <span class="placa-in" id="numbers">123</span>
+    </div>
+
+    <form action="" class="form">
+      <button autofocus class="btn btnNew">New Plate</button>
+      <div class="myInputs">
+        <input type="text" maxlength="3" class="input-letters" autocapitalize="on" placeholder="Enter letters" type="text"></input>  
+        <input type="number" maxlength="3" class="input-numbers" autocapitalize="on" placeholder="Enter numbers" type="text"></input>  
+      </div>
+      <button class="btn btnVerify">Verify Plate</button>
+    </form>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
