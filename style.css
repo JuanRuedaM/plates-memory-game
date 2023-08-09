@@ -1,30 +1,37 @@
 @import url('https://fonts.cdnfonts.com/css/license-plate-usa');
-                
-*{
+
+* {
   margin: 0;
   font-family: 'LICENSE PLATE USA', sans-serif;
   overflow: hidden;
-  font-size: 100px;
 }
 
-body{
+h1 {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+body {
   background-color: #202020;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container{
+.container {
   display: flex;
   background-color: #202020;
   height: 100vh;
-  width: 50vw;
+  width: 60vw;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.placa{
+.placa {
   background-color: gold;
   width: 50vw;
   height: 15vh;
@@ -33,36 +40,39 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 9rem;
-  margin: 20px;
+  font-size: 4rem;
+  /* margin: 20px; */
+  position: relative;
+  padding: 30px;
+  margin: 30px;
 }
 
-.placa-in{
+.placa-in {
   display: flex;
-  font-weight: 900;
-  justify-content: center;
   align-items: center;
-  letter-spacing: 30px;
-  width: 20vh;
+  justify-content: center;
+  width: 100%;
+  transform: scaleY(1.2);
+  font-weight: 600;
+  text-align: center;
   font-size: 100px;
-  transform: scaleY(0.9);
+  letter-spacing: 20px;
 }
 
-.separator {
-  transform: translate(5px, -15px) scaleX(0.5);
+.placa-in-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleY(1.2);
+  font-weight: 600;
+  text-align: center;
+  font-size: 100px;
+  width: 100%;
+  letter-spacing: 20px;
 }
 
-#letters{
-  width: 28vh;
-  margin-right: 0px;
-  padding-left: 50PX;
-}
-#numbers {
-  padding-left: 50px;
-  padding-right: 40px;
-}
 
-form{
+form {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -81,19 +91,21 @@ input {
   color: #FFFFFF;
   border-radius: 10px;
   padding: 14px 24px 16px;
-  margin: 10px;
+  /* margin: 10px; */
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
-  transition: transform 200ms,background 200ms;
+  transition: transform 200ms, background 200ms;
   text-align: center;
+  width: 280px;
+  margin: 10px auto;
 }
 
-.btn:hover{
+.btn:hover {
   transform: translateY(-2px);
 }
 
-.btn:focus{
+.btn:focus {
   border: 1px solid gold;
 }
 
@@ -104,7 +116,7 @@ input {
 }
 
 
-input{
+input {
   padding: 6px 12px;
   margin: 10px;
   background: rgb(31, 32, 35);
@@ -117,11 +129,13 @@ input{
   transition: border 0.15s ease 0s;
 }
 
-input:focus{
+input:focus {
   outline: none;
   box-shadow: none;
   border-color: gold;
-} */
+}
+
+*/
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -133,34 +147,34 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 576px) {
 
-  .container{
+  h1 {
+    font-size: 2rem;
+
+  }
+
+  .container {
+    width: 100vw;
+    justify-content: flex-start;
+    margin: 10px 0px;
+  }
+
+  .placa {
+    display: flex;
+    min-width: 80vw;
+    height: 80px;
+    margin: 20px 0px;
+  }
+
+  form {
     width: 100vw;
   }
 
-  .placa{
-    width: 100%;
+  .placa-in {
+    font-size: 50px;
+    transform: scaleY(1.2);
   }
 
-  form{
-    width: 100vw;
-  }
-
-  .separator{
-    width: 20px;
-    transform: translate(25px, -15px);
-  }
-
-  #letters{
-    width: 40%;
-    margin-left: 20px;
-  }
-
-  #numbers {
-    width: 40%;
-    margin-left: 20px;
-  }
-
-  .placa-in{
+  .placa-in-2 {
     font-size: 50px;
     transform: scaleY(1.2);
   }
